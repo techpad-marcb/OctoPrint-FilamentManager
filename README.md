@@ -7,7 +7,7 @@ If you have questions or encounter issues please take a look at the [Frequently 
 ## Features
 
 * Software odometer to track amount of extruded filament
-* Warns you if the selected spool has not enugh filament left for the print job
+* Warns you if the selected spool has not enough filament left for the print job
 * Automatically pause print if filament runs out
 * Apply temperature offsets assigned to spools
 * Import & export of your spool inventory
