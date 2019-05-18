@@ -75,6 +75,14 @@
                                 </label>
                             </div>
                         </div>
+                        <!-- db type -->
+                        <div class="control-group">
+                            <label class="control-label">{{ _('dbtype') }}</label>
+                            <div class="controls">
+                                <input type="checkbox" data-bind="checked: viewModels.config.config.database.dbtype, enable: viewModels.config.config.database.useExternal">{{ _("Use PostgreSQL database") }}
+                                <input type="checkbox" data-bind="checked: viewModels.config.config.database.dbtype, enable: viewModels.config.config.database.useExternal">{{ _("Use MySQL database") }}
+                            </div>
+                        </div>                        
                         <!-- uri -->
                         <div class="control-group">
                             <label class="control-label">{{ _('URI') }}</label>
