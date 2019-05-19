@@ -55,7 +55,7 @@ class FilamentManagerPlugin(FilamentManagerApi,
         db_config = self._settings.get(["database"], merged=True)
         migrate_schema_version = False
 
-        if db_config["useExternal"] not in valid_boolean_trues:
+        if db_config["usePostgres"] not in valid_boolean_trues or db_config["useMySQL"] not in valid_boolean_trues:
             import os
             # set uri for internal sqlite database
             db_path = os.path.join(self.get_plugin_data_folder(), "filament.db")
