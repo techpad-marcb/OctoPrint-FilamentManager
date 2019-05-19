@@ -16,10 +16,10 @@ from sqlalchemy.schema import MetaData, Table, Column, ForeignKeyConstraint, DDL
 from sqlalchemy.sql import insert, update, delete, select, label
 from sqlalchemy.types import INTEGER, VARCHAR, REAL, TIMESTAMP
 from sqlalchemy.dialects.postgresql import insert as pg_insert
+from sqlalchemy.dialects.mysql import insert
 import sqlalchemy.sql.functions as func
 
 from .listen import PGNotify
-
 
 class FilamentManager(object):
 
